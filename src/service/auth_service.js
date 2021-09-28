@@ -27,6 +27,10 @@ class AuthService {
     });
   }
 
+  logout() {
+    this.auth.signOut();
+  }
+
   getProvider(providerName) {
     switch (providerName) {
       case "Google":
