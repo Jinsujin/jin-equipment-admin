@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+
 import Tabbar from "../tabbar/tabbar";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -30,16 +32,28 @@ function Copyright(props: any) {
 
 const Login = ({ authService }) => {
   const onLogin = event => {
-    console.log("onLogin");
     authService //
       .login(event.currentTarget.textContent)
-      .then(console.log);
-    // .then(data => goToAddOrder(data.user.id));
+      .then(data => goToOrder(data.user.uid));
   };
 
-  const goToAddOrder = userId => {
-    console.log("go add order page");
+  const history = useHistory();
+  const goToOrder = userId => {
+    // 로그인한 유저정보를 함께 전달
+    history.push({
+      pathname: "/order",
+      state: { id: userId }
+    });
   };
+
+  // 컴포넌트가 마운트되거나 업데이트될때
+  useEffect(() => {
+    // 사용자 상태가 바뀌면 콜백 실행
+    // 로그아웃하면 user null
+    authService.onAuthChange(user => {
+      user && goToOrder(user.uid);
+    });
+  });
 
   return (
     <Container component="main" maxWidth="xs">

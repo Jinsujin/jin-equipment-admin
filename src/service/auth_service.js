@@ -19,6 +19,14 @@ class AuthService {
     return signInWithPopup(this.auth, authProvider);
   }
 
+  // onUserChanged(사용자가 바뀌었을때 수행하는 함수)
+  // 콜백 함수를 받아서 인증된유저정보와 함께 호출
+  onAuthChange(onUserChanged) {
+    this.auth.onAuthStateChanged(user => {
+      onUserChanged(user);
+    });
+  }
+
   getProvider(providerName) {
     switch (providerName) {
       case "Google":
