@@ -1,11 +1,11 @@
 import React from "react";
-import Tabbar from "../tabbar/tabbar";
+import AppLayout from "../appLayout";
 
 const Order = ({ authService }) => {
   return (
-    <section>
-      <Tabbar />
-    </section>
+    <AppLayout authService={authService}>
+      <div>app layout - Order </div>
+    </AppLayout>
   );
 };
 
