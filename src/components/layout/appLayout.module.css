@@ -12,15 +12,8 @@
 }
 
 .title {
-  margin-top: 0.5em;
-  margin-bottom: 0.4em;
+  margin-top: 1.2em;
+  margin-bottom: 1.8em;
   font-weight: normal;
   font-size: 1.1rem;
-}
-
-.tabs {
-}
-
-.tab_content {
-  padding: 0 1rem;
 }

@@ -22,8 +22,9 @@ const Settings = ({ authService }) => {
   //   </section>
   // );
 
+  const pageTitle = "Settings";
   return (
-    <AppLayout authService={authService}>
+    <AppLayout authService={authService} pageTitle={pageTitle}>
       <div>app layout - settings </div>
     </AppLayout>
   );

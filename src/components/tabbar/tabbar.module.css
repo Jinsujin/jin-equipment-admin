@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   height: 50px;
+  border-top: 1px solid #f4f4f4;
   /* background-color: wheat; */
 }
 
@@ -16,7 +17,6 @@
   padding-left: 0;
   justify-content: space-between;
   width: 400px;
-  border-top: 1px solid #f4f4f4;
 }
 
 .button {

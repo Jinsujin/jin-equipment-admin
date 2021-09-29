@@ -1,0 +1,12 @@
+.tabs {
+}
+
+.tab_content {
+  padding: 0 1rem;
+}
+
+.form_button {
+  position: fixed !important;
+  top: 1em;
+  right: 1em;
+}
