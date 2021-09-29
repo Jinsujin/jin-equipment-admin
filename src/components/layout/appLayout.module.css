@@ -1,11 +1,12 @@
 .wrap {
   /* background-color: grey; */
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 
 .container {
+  position: relative;
   width: 900px;
   /* background-color: cornsilk; */
   height: 100%;
@@ -16,4 +17,9 @@
   margin-bottom: 1.8em;
   font-weight: normal;
   font-size: 1.1rem;
+}
+
+main {
+  margin-bottom: 4rem;
+  padding: 0 1rem;
 }

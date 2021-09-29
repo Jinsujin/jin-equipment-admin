@@ -25,6 +25,13 @@ const Order = ({ authService }) => {
           // onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
+          <Button
+            className={styles.form_button}
+            type="primary"
+            htmlType="submit"
+          >
+            Submit
+          </Button>
           <Tabs
             centered
             className={styles.tabs}
@@ -87,14 +94,6 @@ const Order = ({ authService }) => {
               Content of Tab Pane 2
             </TabPane>
           </Tabs>
-
-          <Button
-            className={styles.form_button}
-            type="primary"
-            htmlType="submit"
-          >
-            Submit
-          </Button>
         </Form>
       </div>
     </AppLayout>

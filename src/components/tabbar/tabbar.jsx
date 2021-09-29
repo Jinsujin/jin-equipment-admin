@@ -11,6 +11,19 @@ import {
 } from "@ant-design/icons";
 
 const Tabbar = (props) => {
+  const history = useHistory();
+  const onClickOrder = (e) => {
+    history.push("/order");
+  };
+
+  const onClickManage = (e) => {
+    history.push("/manage");
+  };
+
+  const onClickSettings = (e) => {
+    history.push("/settings");
+  };
+
   return (
     <div className={styles.tabbar_wrap}>
       <ul className={styles.tabbar}>
@@ -19,8 +32,9 @@ const Tabbar = (props) => {
             className={styles.button}
             type="text"
             icon={<SearchOutlined />}
+            onClick={onClickOrder}
           >
-            <Link to="/order">Order</Link>
+            order
           </Button>
         </li>
         <li>
@@ -28,8 +42,9 @@ const Tabbar = (props) => {
             className={styles.button}
             type="text"
             icon={<FileTextOutlined />}
+            onClick={onClickManage}
           >
-            <Link to="/manage">Manage</Link>
+            Manage
           </Button>
         </li>
         <li>
@@ -37,8 +52,9 @@ const Tabbar = (props) => {
             className={styles.button}
             type="text"
             icon={<SettingOutlined />}
+            onClick={onClickSettings}
           >
-            <Link to="/settings">Settings</Link>
+            Settings
           </Button>
         </li>
       </ul>
