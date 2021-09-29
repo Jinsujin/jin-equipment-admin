@@ -6,10 +6,32 @@
   display: flex;
   justify-content: center;
   height: 50px;
+  /* background-color: wheat; */
 }
 
 .tabbar {
+  height: 100%;
   display: flex;
   list-style: none;
   padding-left: 0;
+  justify-content: space-between;
+  width: 400px;
+  border-top: 1px solid #f4f4f4;
+}
+
+.button {
+  height: 100% !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  color: #1f1f21 !important;
+  font-size: 0.7rem !important;
+}
+
+.button a {
+  color: #1f1f21;
+}
+
+.button svg {
+  font-size: 1.8em;
 }

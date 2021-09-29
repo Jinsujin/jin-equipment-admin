@@ -1,5 +1,5 @@
 import React from "react";
-import AppLayout from "../appLayout";
+import AppLayout from "../layout/appLayout";
 
 const Manage = ({ authService }) => {
   return (

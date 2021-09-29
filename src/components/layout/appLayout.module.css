@@ -1,0 +1,26 @@
+.wrap {
+  /* background-color: grey; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 900px;
+  /* background-color: cornsilk; */
+  height: 100%;
+}
+
+.title {
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.tabs {
+}
+
+.tab_content {
+  padding: 0 1rem;
+}

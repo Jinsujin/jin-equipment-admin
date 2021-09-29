@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import AppLayout from "../appLayout";
+import AppLayout from "../layout/appLayout";
 
 const Settings = ({ authService }) => {
   // const history = useHistory();
