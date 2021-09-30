@@ -5,7 +5,7 @@ import Login from "./components/login/login";
 import Order from "./components/order/order";
 import Manage from "./components/manage/manage";
 import Settings from "./components/settings/settings";
-
+import Work from "./components/work/work";
 import "antd/dist/antd.css";
 
 /**
@@ -25,6 +25,9 @@ function App({ authService }) {
           </Route>
           <Route path="/manage">
             <Manage authService={authService} />
+          </Route>
+          <Route path="/work">
+            <Work authService={authService} />
           </Route>
           <Route path="/settings">
             <Settings authService={authService} />

@@ -60,7 +60,7 @@ const Order = ({ authService }) => {
               >
                 <Input style={{ width: "100%" }} placeholder="000-0000-0000" />
               </Form.Item>
-              <Divider>Service Contact</Divider>
+              <Divider>Service Contact(Optional)</Divider>
               <Form.Item
                 label="Name"
                 name="contactName"
