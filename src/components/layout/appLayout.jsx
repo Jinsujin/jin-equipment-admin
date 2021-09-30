@@ -3,9 +3,8 @@
  * children: 컴포넌트의 내용
  */
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router";
-import { Link } from "react-router-dom";
 import Tabbar from "../tabbar/tabbar";
 import styles from "./appLayout.module.css";
 
@@ -15,7 +14,7 @@ const AppLayout = ({ children, authService, pageTitle }) => {
   useEffect(() => {
     authService.onAuthChange((user) => {
       if (!user) {
-        history.location("/");
+        history.push("/");
       }
     });
   });
